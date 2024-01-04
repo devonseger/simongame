@@ -50,7 +50,7 @@ $(".btn").click(function() {
     var userChosenColor = $(this).attr("id");
     userClickedPattern.push(userChosenColor);
     console.log(userChosenColor);
-    // playSound(userChosenColor);
+    playSound(userChosenColor);
     animatePress(userChosenColor);
     checkAnswer(userClickedPattern.length - 1);
 });
